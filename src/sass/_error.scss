@@ -1,0 +1,14 @@
+.erro {
+	@include flex-column;
+
+	h1 {
+		font-size: 6em;
+	}
+
+	a {
+		padding: 0.7em;
+		text-decoration: none;
+		background-color: $header-background;
+		color: $favoritos-background;
+	}
+}

@@ -1,0 +1,97 @@
+.filme {
+	@include flex-column;
+
+	h1 {
+		margin: 15px;
+		padding: 0;
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+		max-width: 100ch;
+		margin: 10px;
+		padding: 0;
+	}
+
+	p {
+		max-width: 100ch;
+		line-height: 1.2;
+		margin: 5px;
+		padding: 0;
+		@media (max-width: 768px) {
+			width: 80%;
+			min-width: 450px;
+		}
+	}
+
+	img {
+		max-width: 900px;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+
+		@media (max-width: 768px) {
+			width: 80%;
+			min-width: 450px;
+		}
+	}
+	.botoes {
+		max-width: 100ch;
+
+		button {
+			background-color: $button-before;
+			margin-right: 0.3em;
+			margin-top: 1em;
+			border-radius: 5px;
+			font-size: 1.2em;
+			border: 0;
+			outline: none;
+			padding: 0.8em;
+			cursor: pointer;
+			transition: all ease-in 0.5s;
+			-webkit-transition: all ease-in 0.5s;
+			-moz-transition: all ease-in 0.5s;
+			-ms-transition: all ease-in 0.5s;
+			-o-transition: all ease-in 0.5s;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+		}
+
+		a {
+			background-color: $button-before;
+			text-decoration: none;
+			color: $favoritos-color;
+			margin-right: 0.3em;
+			margin-top: 1em;
+			border-radius: 5px;
+			font-size: 1.2em;
+			border: 0;
+			outline: none;
+			padding: 0.8em;
+			cursor: pointer;
+			transition: all ease-in 0.5s;
+			-webkit-transition: all ease-in 0.5s;
+			-moz-transition: all ease-in 0.5s;
+			-ms-transition: all ease-in 0.5s;
+			-o-transition: all ease-in 0.5s;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+		}
+
+		button:hover {
+			background-color: $header-background;
+			color: $favoritos-background;
+		}
+		a:hover {
+			background-color: $header-background;
+			color: $favoritos-background;
+		}
+	}
+}
