@@ -5,19 +5,40 @@ header {
 	width: 100%;
 	width: 100vw;
 	height: 9vh;
-	background-color: $header-background;
+	background-color: $red;
+	font-weight: bold;
 
 	.logo {
 		font-size: 1.6em;
 		text-decoration: none;
-		color: $logo-color;
+		color: $blue;
+		transition: all ease-in 0.5s;
+		img {
+			vertical-align: middle;
+			padding: 10px;
+			filter: grayscale(100) drop-shadow(0.4em 0.4em 1rem $dark2);
+			-webkit-filter: grayscale(100) drop-shadow(0.4em 0.4em 1rem $dark2);
+			transition: all ease-in 0.5s;
+			-webkit-transition: all ease-in 0.5s;
+			-moz-transition: all ease-in 0.5s;
+			-ms-transition: all ease-in 0.5s;
+			-o-transition: all ease-in 0.5s;
+		}
+	}
+	.logo:hover {
+		color: $light;
+
+		img {
+			filter: grayscale(0);
+			-webkit-filter: grayscale(0);
+		}
 	}
 
 	.favoritos {
 		text-decoration: none;
 		font-size: 1.4em;
-		background: $favoritos-background;
-		color: $favoritos-color;
+		background: $light;
+		color: $blue;
 		font-weight: bold;
 		border-radius: 5px;
 		padding: 5px;
@@ -26,10 +47,14 @@ header {
 		-ms-border-radius: 5px;
 		-o-border-radius: 5px;
 		transition: all ease-in 0.5s;
+		filter: drop-shadow(0.4em 0.4em 1rem $dark2);
+		-webkit-filter: drop-shadow(0.4em 0.4em 1rem $dark2);
 	}
 
 	a:hover {
-		background-color: $header-background;
-		color: $favoritos-background;
+		filter: drop-shadow(0 0 0 $dark2);
+		background-color: $red;
+		color: $light;
+		-webkit-filter: drop-shadow(0 0 0 $dark2);
 	}
 }

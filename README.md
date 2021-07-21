@@ -1,3 +1,3 @@
-# Filmaria
+# Moviefy
 
-## Desenvolvido seguindo o curso de react do Matheus Fraga na Udemy
+## App desenvolvido em React, usando axios, toastify, react router, SASS e uma api de filmes

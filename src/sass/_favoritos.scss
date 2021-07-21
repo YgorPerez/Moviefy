@@ -8,11 +8,11 @@
 	ul {
 		width: 100%;
 		padding: 0;
-		margin-bottom: 1em;
 		@include flex-column;
 
 		li {
 			padding: 0;
+			margin-bottom: 1em;
 			width: 80%;
 			display: flex;
 			justify-content: space-between;
@@ -27,9 +27,13 @@
 					margin-left: 0.6em;
 				}
 
+				button:hover {
+					cursor: pointer;
+				}
+
 				a {
 					text-decoration: none;
-					color: $header-background;
+					color: $red;
 				}
 			}
 		}

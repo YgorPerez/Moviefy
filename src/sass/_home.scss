@@ -13,6 +13,7 @@
 
 		article {
 			@include flex-column;
+			background-color: $light;
 			margin: 1em;
 			padding: 1em;
 			border-radius: 5px;
@@ -24,16 +25,28 @@
 			a {
 				text-decoration: none;
 				text-align: center;
-				color: $logo-color;
-				background-color: $header-background;
+				background-color: $dark1;
+				color: $blue;
 				font-size: 1.5em;
 				width: 100%;
 				padding: 10px 0;
 				border-bottom-left-radius: 5px;
 				border-bottom-right-radius: 5px;
+				transition: all ease-in 0.5s;
+				filter: drop-shadow(0.4em 0.4em 1rem $dark3);
+				-webkit-filter: drop-shadow(0.4em 0.4em 1rem $dark3);
+			}
+
+			a:hover {
+				filter: drop-shadow(0 0 0 $dark3);
+				color: $light;
+				background-color: $red;
+				-webkit-filter: drop-shadow(0 0 0 $dark3);
 			}
 		}
 		strong {
+			font-weight: bold;
+			color: $dark2;
 			padding-bottom: 1em;
 			font-size: 1.3em;
 		}
